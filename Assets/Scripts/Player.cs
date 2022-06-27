@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
         {
             i.PickUpItem();
         }
-
+        ScoreManager.instance.AddPoint();
         //clear list
         NearbyItems.Clear();
     }
@@ -29,6 +29,8 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             PickUpItems();
+
+
         }
     }
 }
