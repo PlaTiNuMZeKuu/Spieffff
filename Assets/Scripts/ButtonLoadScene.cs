@@ -6,8 +6,5 @@ public class ButtonLoadScene : MonoBehaviour
 {
     public string _sceneName = string.Empty;
 
-    public void OnButtonPressed()
-    {
-        Application.LoadLevel(_sceneName);
-    }
+    public void OnButtonPressed() => Application.LoadLevel(_sceneName);
 } //taken from the tank game :D
